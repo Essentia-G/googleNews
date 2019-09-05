@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+struct PieceOfNews: Codable {
+    var title: String
+    var description: String
+    var content: String
+    var url: URL
+    var urlToImage: URL
+    //var publishedAt: Date
+    
+    
+}

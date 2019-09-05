@@ -8,6 +8,6 @@
 
 import Foundation
 
-struct Articles: Codable {
+struct News: Codable {
     var articles: [PieceOfNews]
 }
