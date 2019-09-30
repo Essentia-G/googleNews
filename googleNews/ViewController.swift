@@ -23,13 +23,13 @@ class ViewController: UITableViewController {
         
     switch navigationController?.tabBarItem.tag {
         case 0:
-            urlString = "https://newsapi.org/v2/everything?q=Russia&from=2019-08-21&to=2019-08-21&sortBy=popularity&apiKey=ae7cf38efb07483fa144376e08a71f89"
+            urlString = "https://newsapi.org/v2/everything?q=Russia&sortBy=popularity&apiKey=ae7cf38efb07483fa144376e08a71f89"
         case 1:
-            urlString = "https://newsapi.org/v2/everything?q=apple&from=2019-08-21&to=2019-08-21&sortBy=popularity&apiKey=ae7cf38efb07483fa144376e08a71f89"
+            urlString = "https://newsapi.org/v2/everything?q=apple&sortBy=popularity&apiKey=ae7cf38efb07483fa144376e08a71f89"
         case 2:
-            urlString = "https://newsapi.org/v2/everything?q=apple&from=2019-08-21&to=2019-08-21&sortBy=popularity&apiKey=ae7cf38efb07483fa144376e08a71f89"
+            urlString = "https://newsapi.org/v2/everything?q=apple&sortBy=popularity&apiKey=ae7cf38efb07483fa144376e08a71f89"
         default:
-            urlString = "https://newsapi.org/v2/everything?q=apple&from=2019-08-21&to=2019-08-21&sortBy=popularity&apiKey=ae7cf38efb07483fa144376e08a71f89"
+            urlString = "https://newsapi.org/v2/everything?q=apple&sortBy=popularity&apiKey=ae7cf38efb07483fa144376e08a71f89"
     }
        /*
         if navigationController?.tabBarItem.tag == 0 {
