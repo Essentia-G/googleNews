@@ -16,7 +16,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        //creating duplicate viewcontroller wrapped inside a navigation controller
+        
+        //letting window know what its initial viewcontroller
+        if let tabBarController = window?.rootViewController as? UITabBarController {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc1 = storyboard.instantiateViewController(withIdentifier: "NavController")
+            //attaching a tabbaritem to viewcontroller
+            vc1.tabBarItem = UITabBarItem(tabBarSystemItem: .mostRecent, tag: 1)
+            tabBarController.viewControllers?.append(vc1)
+            
+
+            let vc2 = storyboard.instantiateViewController(withIdentifier: "NavController")
+            vc2.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 2)
+            tabBarController.viewControllers?.append(vc2)
+            
+            
+            let vc3 = storyboard.instantiateViewController(withIdentifier: "NavController")
+            vc3.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 3)
+            tabBarController.viewControllers?.append(vc3)
+            
+        }
+        
         return true
     }
 

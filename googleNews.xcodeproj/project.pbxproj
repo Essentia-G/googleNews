@@ -13,6 +13,9 @@
 		857F75392309D12700CAFE7B /* googleNews.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 857F75372309D12700CAFE7B /* googleNews.xcdatamodeld */; };
 		857F753B2309D12E00CAFE7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 857F753A2309D12E00CAFE7B /* Assets.xcassets */; };
 		857F753E2309D12E00CAFE7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 857F753C2309D12E00CAFE7B /* LaunchScreen.storyboard */; };
+		857F75462309D7DB00CAFE7B /* PieceOfNews .swift in Sources */ = {isa = PBXBuildFile; fileRef = 857F75452309D7DB00CAFE7B /* PieceOfNews .swift */; };
+		857F75482309DB4700CAFE7B /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857F75472309DB4700CAFE7B /* News.swift */; };
+		857F754A230AE5A600CAFE7B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857F7549230AE5A600CAFE7B /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		857F753A2309D12E00CAFE7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		857F753D2309D12E00CAFE7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		857F753F2309D12E00CAFE7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		857F75452309D7DB00CAFE7B /* PieceOfNews .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PieceOfNews .swift"; sourceTree = "<group>"; };
+		857F75472309DB4700CAFE7B /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		857F7549230AE5A600CAFE7B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,9 @@
 			children = (
 				857F75302309D12700CAFE7B /* AppDelegate.swift */,
 				857F75322309D12700CAFE7B /* ViewController.swift */,
+				857F7549230AE5A600CAFE7B /* DetailViewController.swift */,
+				857F75472309DB4700CAFE7B /* News.swift */,
+				857F75452309D7DB00CAFE7B /* PieceOfNews .swift */,
 				857F75342309D12700CAFE7B /* Main.storyboard */,
 				857F753A2309D12E00CAFE7B /* Assets.xcassets */,
 				857F753C2309D12E00CAFE7B /* LaunchScreen.storyboard */,
@@ -139,8 +148,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				857F75332309D12700CAFE7B /* ViewController.swift in Sources */,
+				857F75462309D7DB00CAFE7B /* PieceOfNews .swift in Sources */,
 				857F75392309D12700CAFE7B /* googleNews.xcdatamodeld in Sources */,
+				857F754A230AE5A600CAFE7B /* DetailViewController.swift in Sources */,
 				857F75312309D12700CAFE7B /* AppDelegate.swift in Sources */,
+				857F75482309DB4700CAFE7B /* News.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +297,9 @@
 		857F75432309D12E00CAFE7B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 83H6A623AA;
 				INFOPLIST_FILE = googleNews/Info.plist;
@@ -295,6 +309,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.stminchuk.googleNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -303,7 +318,9 @@
 		857F75442309D12E00CAFE7B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 83H6A623AA;
 				INFOPLIST_FILE = googleNews/Info.plist;
@@ -313,6 +330,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.stminchuk.googleNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
