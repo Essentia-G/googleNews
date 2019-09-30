@@ -54,6 +54,12 @@ class ViewController: UITableViewController {
         }
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tabBarController?.tabBar.isHidden = false
+        
+    }
+    
     func parse(json: Data) {
         DispatchQueue.global(qos: .userInteractive).async { [weak self] in
             let decoder = JSONDecoder()
@@ -111,6 +117,8 @@ class ViewController: UITableViewController {
         navigationController?.pushViewController(vc, animated: true)
     }
 }
+
+
 
 extension UIImage {
     
